@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <ProjectUISubcaption>Playlist API - ASP.NET Core 2.1</ProjectUISubcaption>
+  </PropertyGroup>
+
+  <!-- <snippet_SuppressWarnings> -->
+  <PropertyGroup>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+    <UserSecretsId>7a74765e-25b6-41d4-b901-a0b0323a3c19</UserSecretsId>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="sample_images\**" />
+    <Content Remove="sample_images\**" />
+    <EmbeddedResource Remove="sample_images\**" />
+    <None Remove="sample_images\**" />
+  </ItemGroup>
+  <!-- </snippet_SuppressWarnings> -->
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.0.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
+    <PackageReference Include="SpotifyApi.NetCore" Version="2.4.7" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0-rc2" />
+  </ItemGroup>
+
+</Project>
